@@ -1,0 +1,170 @@
+:root {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  --primary: #a52828;
+  --secundary: #d6dbdf;
+  --icons: #85929e;
+  --light: #ebedef;
+}
+
+/* OOCSS EXAMPLE  */
+.container {
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 1.66rem;
+  padding-right: 1.66rem;
+  overflow: hidden;
+
+  /* Typography */
+
+  /* Visual */
+
+  /* Misc */
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header__element {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.header__title {
+  padding-top: 0.8rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.8rem;
+
+  color: #fff;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 2rem;
+  font-weight: 600;
+
+  background-color: var(--primary);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secundary);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn--big {
+  font-size: 1.25rem;
+}
+
+.btn__following,
+.btn__home {
+  border-radius: 2.91rem;
+}
+
+.btn.active {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn.active:hover {
+  color: #fff;
+  background-color: #000;
+}
+/* SEARCH  */
+.header__search {
+  flex-grow: 1;
+}
+
+.search-form {
+  position: relative;
+
+  transition: 0.4s;
+}
+
+.search-form__field {
+  width: 100%;
+
+  border: none;
+
+  color: var(--icons);
+  font-size: 1.2rem;
+
+  padding-top: 1.2rem;
+  padding-right: 0.8rem;
+  padding-bottom: 1.2rem;
+  padding-left: 2.5rem;
+
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+
+  background-color: var(--light);
+
+  transition: 0.4s;
+}
+
+.search-form__field::placeholder {
+  color: var(--icons);
+}
+
+.search-form__field:focus {
+  outline: none;
+  padding-left: 3rem;
+  border: 0.1rem solid var(--icons);
+  transition: 0.4s;
+}
+
+.search-form__icon {
+  position: absolute;
+
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+  padding-left: 0.1rem;
+
+  color: var(--icons);
+
+  transition: 0.4s;
+
+  opacity: 1;
+}
+
+.search-form__field:focus + .search-form__icon {
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.icon__notification,
+.icon__messages,
+.icon__profile,
+.icon__other {
+  font-size: 2rem;
+  color: var(--icons);
+}

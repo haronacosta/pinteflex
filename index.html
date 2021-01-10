@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Pinteflex</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>Header</header>
-    <main>Main contect</main>
-    <footer>Footer</footer>
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="libs/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__element header__title">PF</div>
+
+      <div class="header__element header__home-button">
+        <button class="btn btn--big btn__home active">Home</button>
+      </div>
+
+      <div class="header__element header__home-button">
+        <button class="btn btn--big btn__following">Following</button>
+      </div>
+
+      <div class="header__element header__search">
+        <form class="search-form">
+          <input
+            class="search-form__field"
+            type="text"
+            placeholder="Search..."
+          />
+
+          <span class="search-form__icon">
+            <i class="fas fa-search"></i>
+          </span>
+        </form>
+      </div>
+
+      <div class="header__element header__notification">
+        <a class="icon__notification"><i class="fas fa-bell"></i></a>
+      </div>
+
+      <div class="header__element header__messages">
+        <a class="icon__messages"><i class="far fa-comment-dots"></i></a>
+      </div>
+
+      <div class="header__element header__profile">
+        <a class="icon__profile"><i class="fas fa-user-circle"></i></a>
+      </div>
+
+      <div class="header__element header__others">
+        <a class="icon__other"><i class="fas fa-chevron-down"></i></a>
+      </div>
+    </header>
+
+    <main class="container"></main>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
