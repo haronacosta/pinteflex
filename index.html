@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,46 +8,120 @@
     <title>Pinteflex</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Raleway:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="libs/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="libs/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="header__element header__title">PF</div>
 
-      <div class="header__element header__home-button">
-        <button class="btn btn--big btn__home active">Home</button>
+      <div class="header__element header__select" id="headerSelect">
+
+        <div class="header__select__container">
+          <div class="header__select__text">
+            HOME
+          </div>
+          <div class="header__select__icon">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="header__select__options">
+          <div class="header__select__option">
+            <div class="header__select__text">
+              HOME
+            </div>
+          </div>
+          <div class="header__select__option">
+            <div class="header__select__text">FOLLOWING</div>
+          </div>
+        </div>
       </div>
 
-      <div class="header__element header__home-button">
-        <button class="btn btn--big btn__following">Following</button>
-      </div>
+      <div class="header__element header__search" id="header_search">
+        <a id="iconSearch" class="icon__search">
+          <i class="fas fa-search"></i>
+        </a>
 
-      <div class="header__element header__search">
-        <form class="search-form">
-          <input
-            class="search-form__field"
-            type="text"
-            placeholder="Search..."
-          />
+        <div id="search-input-container" class="d-none search__input__container">
+          <input class="search__input__field" type="text" name="search" id="search-input">
+          <span class="search__input__icon d-none" id="search-input-icon"><i class="fas fa-times"></i></span>
+        </div>
 
-          <span class="search-form__icon">
-            <i class="fas fa-search"></i>
-          </span>
-        </form>
+        <div class="header__search__box" id="search-box">
+          <div class="search__box">
+            <div class="search_recent__title">
+              Recent Searches <span class="search_recent__title_icon"><i class="fas fa-times-circle"></i></span>
+            </div>
+            <div class="search_recent__container">
+
+              <div class="search_recent__item">
+                Neque porro
+              </div>
+              <div class="search_recent__item">
+                quisquam est
+              </div>
+              <div class="search_recent__item">
+                qui dolorem
+              </div>
+
+              <div class="search_recent__item">
+                ipsum quia
+              </div>
+              <div class="search_recent__item">
+                dolor sit amet
+              </div>
+              <div class="search_recent__item">
+                consectetur
+              </div>
+            </div>
+
+            <div class="search_recent__popular__title">
+              Popular
+            </div>
+
+            <div class="search_recent__popular">
+              <div class="search_recent__popular__item">
+                <img class="search_recent__popular__item__img" src="./img/wallpaper.jpg" alt="Cars">
+                <div class="search_recent__popular__item__text">
+                  Wallpapers
+                </div>
+              </div>
+
+              <div class="search_recent__popular__item">
+                <img class="search_recent__popular__item__img" src="./img/cars.jpg" alt="Cars">
+                <div class="search_recent__popular__item__text">
+                  Cars
+                </div>
+              </div>
+
+              <div class="search_recent__popular__item">
+                <img class="search_recent__popular__item__img" src="./img/people.jpg" alt="Cars">
+                <div class="search_recent__popular__item__text">
+                  People
+                </div>
+              </div>
+
+              <div class="search_recent__popular__item ">
+                <img class="search_recent__popular__item__img" src="./img/city.jpg" alt="Cars">
+                <div class="search_recent__popular__item__text">
+                  City
+                </div>
+              </div>
+            </div>
+            </di>
+          </div>
+        </div>
       </div>
 
       <div class="header__element header__notification">
         <a class="icon__notification"><i class="fas fa-bell"></i></a>
       </div>
 
-      <div class="header__element header__messages">
-        <a class="icon__messages"><i class="far fa-comment-dots"></i></a>
+      <div class="header__element header__messages"> <a class="icon__messages"><i class="fas fa-comment"></i></a>
       </div>
 
       <div class="header__element header__profile">
@@ -57,9 +132,163 @@
         <a class="icon__other"><i class="fas fa-chevron-down"></i></a>
       </div>
     </header>
+    <main class="main">
+      <section class="wrapper">
 
-    <main class="container"></main>
+        <div class="wrapper__column">
+          <div class="wrapper__image">
+            <img class="image" src="img/image1.jpg" alt="Imagen 1">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image2.jpg" alt="Imagen 2">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image3.jpg" alt="Imagen 3">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image4.jpg" alt="Imagen 4">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image5.jpg" alt="Imagen 5">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image6.jpg" alt="Imagen 6">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image7.jpg" alt="Imagen 7">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image8.jpg" alt="Imagen 8">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image9.jpg" alt="Imagen 9">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image10.jpg" alt="Imagen 10">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="wrapper__column">
+          <div class="wrapper__image">
+            <img class="image" src="img/image11.jpg" alt="Imagen 11">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image12.jpg" alt="Imagen 12">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image13.jpg" alt="Imagen 13">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image14.jpg" alt="Imagen 14">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image15.jpg" alt="Imagen 15">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image16.jpg" alt="Imagen 16">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image17.jpg" alt="Imagen 17">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image18.jpg" alt="Imagen 18">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image19.jpg" alt="Imagen 19">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+
+          <div class="wrapper__image">
+            <img class="image" src="img/image20.jpg" alt="Imagen 20">
+            <div class="image__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      Haron Acosta. 2021
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
+
 </html>
