@@ -156,7 +156,7 @@ const obtenerImagenes = async () => {
   const photos_data = await photos.map((photo) => ({
     id: photo.id,
     photographer: photo.photographer,
-    url: photo.src.large2x,
+    url: photo.src.large,
   }));
 
   return photos_data;
