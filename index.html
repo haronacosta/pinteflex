@@ -22,14 +22,17 @@
       <div class="header__element header__select" id="headerSelect">
 
         <div class="header__select__container">
+
           <div class="header__select__text">
             HOME
           </div>
+
           <div class="header__select__icon">
             <i class="fas fa-angle-down"></i>
           </div>
         </div>
-        <div class="header__select__options">
+
+        <div class="header__select__options v-hidden">
           <div class="header__select__option">
             <div class="header__select__text">
               HOME
@@ -39,6 +42,15 @@
             <div class="header__select__text">FOLLOWING</div>
           </div>
         </div>
+
+      </div>
+
+      <div class="header__element header__select header__select--following">
+        <div class="header__select__container">
+          <div class="header__select__text">
+            FOLLOWING
+          </div>
+        </div>
       </div>
 
       <div class="header__element header__search" id="header_search">
@@ -46,8 +58,9 @@
           <i class="fas fa-search"></i>
         </a>
 
-        <div id="search-input-container" class="d-none search__input__container">
-          <input class="search__input__field" type="text" name="search" id="search-input">
+        <div class="search__input__container d-none" id="search-input-container">
+          <input class="search__input__field" type="text" name="search" id="search-input" placeholder="Search...">
+          <span class="search__input__icon--search"><i class="fas fa-search"></i></span>
           <span class="search__input__icon d-none" id="search-input-icon"><i class="fas fa-times"></i></span>
         </div>
 
@@ -133,154 +146,10 @@
       </div>
     </header>
     <main class="main">
+      <a class="pexels" href="https://www.pexels.com">Photos provided by Pexels</a>
       <section class="wrapper">
 
-        <div class="wrapper__column">
-          <div class="wrapper__image">
-            <img class="image" src="img/image1.jpg" alt="Imagen 1">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image2.jpg" alt="Imagen 2">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image3.jpg" alt="Imagen 3">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image4.jpg" alt="Imagen 4">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image5.jpg" alt="Imagen 5">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image6.jpg" alt="Imagen 6">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image7.jpg" alt="Imagen 7">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image8.jpg" alt="Imagen 8">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image9.jpg" alt="Imagen 9">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image10.jpg" alt="Imagen 10">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-        </div>
-
-
-        <div class="wrapper__column">
-          <div class="wrapper__image">
-            <img class="image" src="img/image11.jpg" alt="Imagen 11">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image12.jpg" alt="Imagen 12">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image13.jpg" alt="Imagen 13">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image14.jpg" alt="Imagen 14">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image15.jpg" alt="Imagen 15">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image16.jpg" alt="Imagen 16">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image17.jpg" alt="Imagen 17">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image18.jpg" alt="Imagen 18">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image19.jpg" alt="Imagen 19">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-
-          <div class="wrapper__image">
-            <img class="image" src="img/image20.jpg" alt="Imagen 20">
-            <div class="image__title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-        </div>
-
-
+    
       </section>
     </main>
 
